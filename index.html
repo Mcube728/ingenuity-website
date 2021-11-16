@@ -21,7 +21,8 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/favicon.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="material-icons" onclick="hideMenu()">close</i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT US</a></li>
@@ -33,17 +34,28 @@
                     <li><a href="">SPONSORS</a></li>
                     <li><a href="">CONTACT US</a></li>
                 </ul>
-                <i class="material-icons">menu</i>
             </div>
+            <i class="material-icons" onclick="showMenu()">menu</i>
         </nav>
         <!-- PLEASE DO NOT USE THE CODE BELOW AS THIS CAN PROBABLY RESULT IN COPYRIGHT ISSUES!! -->
         <div class="text-box">
             <h1>ingeNUity 2022</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ullamcorper risus, nec aliquet enim. Maecenas at efficitur magna, non accumsan nisl. Aliquam quis justo id erat dapibus tempor. Curabitur mollis commodo quam ut laoreet. Duis ultricies nisl in eros congue, in sodales leo ullamcorper. Nullam sed neque quis libero. </p>
+            <p>JEKYLL AND HYDE, THE DUALITY OF MAN</p>
             <a href="" class="button">Click here to learn more about IngeNUity!!</a>
 
         <div>
     </section> 
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
 </body>
 
 </html>
