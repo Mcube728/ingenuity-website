@@ -85,6 +85,8 @@ nav img{
 nav .material-icons{
     display: none;
 }
+
+/* Mobile friendly stuff */
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
