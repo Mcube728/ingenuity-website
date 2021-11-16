@@ -9,7 +9,7 @@
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
     background-position: center;
-    background-siize: cover;
+    background-size: cover;
     position: relative;
 }
 nav{
@@ -23,7 +23,7 @@ nav img{
 }
 .nav-links{
     flex: 1;
-     text-align: right;
+    text-align: right;
 }
 .nav-links ul li{
     list-style: none;
@@ -43,10 +43,12 @@ nav img{
     background: #f44336;
     display: block;
     margin: auto;
-    transition: 0.45s;
+    transition: 0.225s;
 }
 .nav-links ul li:hover::after{
     width: 100%;
+    background: #198844;
+    transition: 0.225
 }
 .text-box{
     width: 90%;
