@@ -92,7 +92,7 @@ nav .material-icons{
     align-items: center;
     text-align: center;
     padding: 20px 20px;
-    font-size: 55px;
+    font-size: 35px;
 }
 /* Mobile friendly stuff */
 @media(max-width: 700px){
