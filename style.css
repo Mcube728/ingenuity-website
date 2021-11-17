@@ -61,6 +61,7 @@ nav img{
 }
 .text-box h1{
     font-size: 62px;
+    font-weight: 400;
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -92,12 +93,13 @@ nav .material-icons{
     align-items: center;
     text-align: center;
     padding: 20px 20px;
-    font-size: 35px;
+    font-size: 48px;
 }
 /* Mobile friendly stuff */
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
+        font-weight: 400;
     }
     .nav-links ul li{
         display: block;
@@ -122,5 +124,8 @@ nav .material-icons{
     }
     .nav-links ul{
         padding: 30px;
+    }
+    .countdown-container{
+        font-size: 20px;
     }
 }
