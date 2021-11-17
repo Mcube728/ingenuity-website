@@ -43,12 +43,18 @@
             <h1>ingeNUity 2022</h1>
             <p>JEKYLL AND HYDE, THE DUALITY OF MAN</p>
             <a href="" class="button">Click here to learn more about IngeNUity!!</a>
-
-        <div>
+        </div>
     </section> 
-    
-    <!-- A bit of JavaScript for mobiles -->
+
+    <!-- Countdown -->
+    <div class="countdown-container">
+    TIME LEFT TILL INGENUITY '22<br>
+        <div class="countdown-clock">00 : 00 :00 : 00</div>
+    </div>
+
+    <!-- A bit of JavaScript -->
     <script>
+        //Mobile related JS
         var navLinks = document.getElementById("navLinks");
         function showMenu(){
             navLinks.style.right = "0"
@@ -56,8 +62,8 @@
         function hideMenu(){
             navLinks.style.right = "-200px"
         }
-
     </script>
+    <script src=countdown.js></script>
 </body>
 
 </html>
