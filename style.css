@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header{
@@ -61,7 +61,7 @@ nav img{
 }
 .text-box h1{
     font-size: 62px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -97,6 +97,12 @@ nav .material-icons{
 }
 /* Mobile friendly stuff */
 @media(max-width: 700px){
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative
+    }
     .text-box h1{
         font-size: 20px;
         font-weight: 400;
@@ -127,5 +133,6 @@ nav .material-icons{
     }
     .countdown-container{
         font-size: 20px;
+        font-weight: 500px;
     }
 }
