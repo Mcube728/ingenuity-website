@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 .header{
@@ -110,22 +111,30 @@ nav .material-icons{
 .intro h2{
     font-size:36px;
 }
+/*image-showcase
 .showcase{
-    width:80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
+
 }
-.showcase-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
 }
-.showcase-col img{
-    width: 50%;
+
+.gallery:hover {
+  border: 1px solid #777;
 }
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}*/
 /* Mobile friendly stuff */
 @media(max-width: 700px){
     html, body {
