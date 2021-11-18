@@ -25,25 +25,29 @@
 <body>
     <section class="header">
         <!--  Navbar -->
-        <nav>
-            <a href="index.html"><img src="images/favicon.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="material-icons" onclick="hideMenu()">close</i>
+        <nav class="navbar">
+            <div class="navbar-logo"><a href="index.html"><img src="images/navbar-logo.png"></a></div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <!--<i class="material-icons" onclick="hideMenu()">close</i>-->
+            <div class="navbar-links">
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">ARTISTS</a></li>
-                    <li><a href="">JOURNEY</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">MERCH</a></li>
-                    <li><a href="">EVENTS</a></li>
-                    <li><a href="">SPONSORS</a></li>
-                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">ARTISTS</a></li>
+                    <li><a href="#">JOURNEY</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">MERCH</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">SPONSORS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
                 </ul>
             </div>
-            <i class="material-icons" onclick="showMenu()">menu</i>
+            <!--<i class="material-icons" onclick="showMenu()">menu</i>-->
         </nav>
-        <!-- Navbar End -->
         <div class="text-box">
             <h1>ingeNUity</h1>
             <p>JEKYLL AND HYDE, THE DUALITY OF MAN</p>
@@ -91,7 +95,9 @@
             navLinks.style.right = "-200px"
         }
     </script>
-    <script src=countdown.js></script><!-- countdown js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/countdown.js"></script><!-- countdown js -->
+    <script src="js/navbar.js"></script><!-- navbar js -->
 </body>
 
 </html>
