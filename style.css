@@ -17,8 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
-    color: white;
+    /*background: #000;*/
 }
 .navbar-logo img{
     height: 50px;
@@ -35,19 +34,21 @@
 }
 .navbar-links li a{
     text-decoration: none;
-    color: white;
+    color: #cccccc;
     padding: 1rem;
     display: block;
 }
 .navbar-links li:hover{
-    background-color: #464646;
-    transition: 0.5s;
+    /*background-color: #212121;*/
+}
+.navbar-links li a:hover{
+    color: #ffffff;
 }
 .toggle-button{
     position: absolute;
     top: .75rem;
     right: 1rem;
-    display: none
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -144,7 +145,7 @@ nav .material-icons{
   text-align: center;
 }*/
 /* Mobile friendly stuff */
-@media(max-width: 700px){
+@media(max-width: 850px){
     html, body {
         overflow-x: hidden;
     }
@@ -188,5 +189,36 @@ nav .material-icons{
     }
     .intro h3{
         font-size: 19px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background: #000;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
     }
 }
