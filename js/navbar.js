@@ -1,12 +1,5 @@
-const nav = document.querySelector('#nav');
-let navTop = nav.offsetTop;
+const navbar= document.querySelector(".navbar");
 
-function fixedNav() {
-  if (window.scrollY >= navTop) {    
-    nav.classList.add('fixed');
-  } else {
-    nav.classList.remove('fixed');    
-  }
+window.onscroll= ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
-
-window.addEventListener('scroll', fixedNav);
