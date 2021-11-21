@@ -36,6 +36,9 @@
     text-decoration: none;
     margin-left:25px;
 }
+.navbar-links li a{
+    /**/
+}
 .navbar-logo img{
     height: 50px;
     width: auto;
@@ -104,6 +107,24 @@
 }
 .intro h2{
     font-size:36px;
+}
+.image-gallery{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    column-count: 2;
+    column-gap: 10px;
+}
+.image-gallery img {
+   width: 100% !important;
+   height: auto !important;
+   margin-bottom:5px; /* to match column gap */
+}
+@media (max-width: 800px){
+    .image-gallery{
+        column-count: 1;
+    }
 }
 @media (max-width: 1028px){
     body.disabledScroll{
