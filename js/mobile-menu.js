@@ -4,13 +4,13 @@ const cancelButton= document.querySelector(".cancel-button");
 
 const body= document.querySelector("body");
 
-menuButton.onclick = ()=>{
+menuButton.addEventListener("click",function() {
     menu.classList.add("active");
     menuButton.classList.add("hide");
     body.classList.add("disabledScroll");
-}
-cancelButton.onclick = ()=>{
+})
+cancelButton.addEventListener("click",function() {
     menu.classList.remove("active");
     menuButton.classList.remove("hide");
     body.classList.remove("disabledScroll");
-}
+})
