@@ -117,10 +117,60 @@
     column-gap: 10px;
 }
 .image-gallery img {
-   width: 100% !important;
-   height: auto !important;
-   margin-bottom:5px; /* to match column gap */
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; /* to match column gap */
 }
+.merch-banner{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(48,48,163,1) 50%, rgba(0,212,255,1) 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
+.sponsors{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding-top: 75px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.sponsors p{
+    font-size: 15px;
+    padding: 10px;
+}
+.sponsors h1{
+    font-size: 54px;
+    padding-bottom: 40px;
+}
+.sponsors h2{
+    font-size: 36px;
+    padding: 25px;
+}
+.sponsors h4{
+    font-size: 32px;
+}
+.sponsors img{
+    padding: 14px;
+    width: 25%;
+}
+.tier-2-sponsor{
+    padding-top: 35px; 
+    column-count: 2;
+    column-gap: 50px;
+}
+.tier-2-sponsor img{
+    width: 35%;
+}
+.tier-3-sponsor{
+    padding-top: 35px; 
+    column-count: 3;
+    column-gap: 25px;
+}
+.tier-3-sponsor img{
+    width: 45%;
+}
+
 @media (max-width: 800px){
     .image-gallery{
         column-count: 1;
