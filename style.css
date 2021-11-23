@@ -146,9 +146,11 @@
 .sponsors h2{
     font-size: 36px;
     padding: 25px;
+    font-weight: 400;
 }
 .sponsors h4{
     font-size: 32px;
+    font-weight: 400;
 }
 .sponsors img{
     padding: 14px;
@@ -218,5 +220,17 @@
     }
     .countdown-container{
         font-size: 24px;
+    }
+    .title-sponsor img{
+        width: 45%;
+    }
+    .tier-2-sponsor{
+        column-count: 1;
+    }
+    .tier-2-sponsor img{
+        width: 45%;
+    }
+    .tier-3-sponsor{
+        column-count: 1;
     }
 }
