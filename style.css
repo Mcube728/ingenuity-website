@@ -178,7 +178,7 @@
 }
 .footer{
     width: 80%;
-    height: 40vh;
+    height: 30vh;
     background-color: black;
     color: white;
     display: flex;
@@ -203,8 +203,14 @@
     color: blue;
     transition: 0.3s ease-out;
 }
+.footer-heading img{
+    width: 150px;
+}
 .footer-email-form h2{
     margin-bottom: 2rem;
+}
+.footer-socials img{
+    width: 25px;
 }
 #footer-email{
     width: 250px;
