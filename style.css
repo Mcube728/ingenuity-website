@@ -172,75 +172,79 @@
 .tier-3-sponsor img{
     width: 45%;
 }
-.footer-container{
-    background-color: black;
-    padding: 4rem 0 4rem 0;
+footer{
+    width: 100%;
+    height: auto;
+    padding: 50px 50px;
+    background: #000;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.footer{
-    width: 80%;
-    height: 30vh;
-    background-color: black;
-    color: white;
+footer.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*footer .container .sec{
+    margin-right: 30px;
+}
+footer .container .sec.aboutus{
+    width: 30%;
+}*/
+footer .container h2{
+    position: relative;
+    margin-bottom: 15px;
+}
+footer .container h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.social-media{
+    margin-top: 20px;
+    display: flex;
+}
+.social-media li{
+    list-style: none;
+}
+.social-media li a{
+    display: inline-block;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    align-items: center;
+    margin-right: 10px;
 }
-.footer-heading{
-    display: flex;
-    flex-direction: column;
-    margin-right: 4rem;
-}
-.footer-heading h2{
-    margin-bottom: 2rem;
-}
-.footer-heading a{
-    color: white;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-}
-.footer-heading a:hover{
-    color: blue;
-    transition: 0.3s ease-out;
-}
-.footer-heading img{
-    width: 150px;
-}
-.footer-email-form h2{
-    margin-bottom: 2rem;
-}
-.footer-socials img{
+.social-media img{
     width: 25px;
 }
-#footer-email{
-    width: 250px;
-    height: 40px;
-    border-radius: 4px;
-    padding-left: 0.5rem;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    outline: none;
-    border: none;
+.address .material-icons{
+    font-size:16px;
 }
-#footer-email::placeholder{
-    color: #b1b1b1;
-}
-#footer-email-button{
-    width: 100px;
-    height: 40px;
-    border-radius: 4px;
-    background-color:#198844;
-    outline: none;
-    border: none;
-    color: #fff;
-    font-size: 1rem;
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 @media (max-width: 800px){
     .image-gallery{
         column-count: 1;
-    }
-    .footer{
-        padding-top:2rem;
     }
 }
 @media (max-width: 720px){
